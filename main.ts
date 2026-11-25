@@ -7,7 +7,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 // setup, payoff, stop. Deterministic: one fixed string, no network, no
 // clock, no randomness. Writes it to /output/entry.txt.
 const text =
-  "I asked the printer for one page and it printed my search history, my calendar, and a signed statement that I should not be trusted with buttons.";
+  "I asked the printer for one page and it printed my search history, my calendar, and a signed statement banning me from buttons.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", text, "utf8");
